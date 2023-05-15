@@ -20,8 +20,8 @@ import datetime
 def spotify_data_pull(album):
 
     load_dotenv()
-    SPOTIFY_SECRET = os.getenv('SPOTIFY_SECRET')
-    SPOTIFY_ID = os.getenv('SPOTIFY_ID')
+    SPOTIFY_SECRET = '6fd0656e1adb4ed4a3d7208916a95c94'
+    SPOTIFY_ID = 'cfe02c1227c54c908c3742db4b164528'
     album_url_base = r'https://open.spotify.com/album/'
     AUTH_URL = r'https://accounts.spotify.com/api/token'
     album_get = 'https://api.spotify.com/v1/albums/{id}'
