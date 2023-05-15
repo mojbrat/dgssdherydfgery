@@ -36,7 +36,7 @@ def spotify_data_pull(album):
     })
 
     auth_response_data = auth_response.json()
-    access_token = auth_response_data['access_token']
+    access_token = auth_response_data['client_id']
     headers = {
         'Authorization': 'Bearer {token}'.format(token=access_token)
     }
